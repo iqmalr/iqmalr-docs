@@ -1,0 +1,51 @@
+# Panduan Instalasi Laravel 11
+
+Memulai proyek baru dengan Laravel 11 adalah langkah pertama menuju pembuatan aplikasi web yang efisien dan modern. Dengan fitur-fitur terbaru yang ditawarkan oleh Laravel 11, pengembang dapat menikmati proses pengembangan yang lebih cepat dan aman. Berikut adalah langkah-langkah untuk menginstal Laravel 11 pada sistem Anda.
+
+## Prasyarat:
+
+Sebelum memulai, pastikan bahwa sistem Anda telah terinstal:
+
+1.  PHP versi 8.2 atau lebih tinggi.
+2.  Composer, manajer dependensi PHP.
+
+import { Steps } from "nextra/components";
+
+<Steps>
+### Step Pertama
+
+Instalasi PHP dan Composer Untuk pengguna Windows, Anda dapat menginstal PHP dan Composer menggunakan Laravel Herd, yang menyederhanakan proses instalasi. Untuk pengguna macOS atau Linux, PHP dan Composer dapat diinstal melalui terminal.
+
+Anda dapat mengunduh Composer [di sini](https://getcomposer.org/) [https://getcomposer.org/](https://getcomposer.org/).
+
+Untuk informasi lebih lanjut tentang cara menginstal Laravel Herd di Windows, kunjungi tautannya [di sini](https://herd.laravel.com/windows) [https://herd.laravel.com/windows](https://herd.laravel.com/windows).
+
+### Step Kedua
+
+Membuat Proyek Laravel Setelah PHP dan Composer terinstal, buat proyek Laravel baru dengan menjalankan perintah berikut di terminal Anda:
+
+```bash /nama-proyek/ filename="bash"
+composer create-project --prefer-dist laravel/laravel nama-proyek
+```
+
+Ganti `nama-proyek` dengan nama yang Anda inginkan untuk aplikasi Anda.
+
+### Step Ketiga
+
+Konfigurasi Lingkungan Setelah proyek dibuat, konfigurasikan file `.env` di dalam direktori proyek untuk menyesuaikan pengaturan lingkungan seperti koneksi database dan variabel lingkungan lainnya.
+
+### Step Keempat
+
+Menjalankan Server Pengembangan Laravel menyediakan server pengembangan bawaan yang dapat dijalankan dengan perintah Artisan berikut:
+
+php artisan serve
+
+Perintah ini akan menjalankan server pengembangan di `http://localhost:8000`.
+
+### Step Kelima
+
+Menjelajahi Laravel 11 Setelah instalasi selesai, Anda dapat menjelajahi fitur-fitur baru Laravel 11 melalui dokumentasi resmi atau dengan memulai pembuatan komponen aplikasi Anda.
+
+</Steps>
+
+Dengan mengikuti panduan instalasi ini, Anda akan siap untuk memulai pengembangan dengan Laravel 11. Jangan lupa untuk selalu memeriksa dokumentasi resmi Laravel untuk informasi terbaru dan praktik terbaik. Selamat mengkode!

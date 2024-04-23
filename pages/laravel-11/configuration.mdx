@@ -1,0 +1,63 @@
+import { Callout } from "nextra/components";
+
+<Callout type="warning" emoji="⚠️">
+  Jangan sampai ada langkah yang terlewat
+</Callout>
+
+# Konfigurasi Laravel 11
+
+Laravel 11 memperkenalkan beberapa fitur baru dan peningkatan performa. Untuk memanfaatkannya secara maksimal, penting untuk mengkonfigurasi framework Anda dengan benar.
+
+## Persiapan
+
+Sebelum Anda mulai, pastikan Anda telah menginstal Laravel 11. Jika belum, Anda dapat mengikuti panduan instalasi pada halaman sebelumnya atau dengan mengunjungi `laravel.com`
+
+## Konfigurasi Lokal
+
+Laravel menggunakan file `.env` untuk mengelola konfigurasi lingkungan. Salin file `.env.example` menjadi `.env` dan sesuaikan nilai-nilai berikut sesuai dengan lingkungan Anda:
+
+```plaintext filename=".env"
+APP_NAME=Laravel
+APP_ENV=local
+APP_KEY=
+APP_DEBUG=true
+APP_URL=http://localhost
+LOG_CHANNEL=stack
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=laravel
+DB_USERNAME=root
+DB_PASSWORD=
+```
+
+Jangan lupa untuk menjalankan `php artisan key:generate` untuk mengatur `APP_KEY`.
+
+## Konfigurasi Database
+
+Laravel mendukung beberapa sistem database. Anda dapat mengkonfigurasi koneksi database Anda di file `.env` seperti yang ditunjukkan di atas.
+
+## Migrasi Database
+
+Setelah database dikonfigurasi, gunakan migrasi untuk membuat skema database Anda:
+
+```bash
+php artisan migrate
+```
+
+## Penyimpanan
+
+Laravel menyediakan sistem file yang terintegrasi untuk menyimpan file. Untuk membuat link simbolik dari `public/storage` ke `storage/app/public`, gunakan perintah:
+
+```bash
+php artisan storage:link
+```
+
+<Callout type="info" emoji="i">
+  Pastikan Anda telah mengkonfigurasi sistem file dengan benar di file
+  `config/filesystems.php`.
+</Callout>
+
+## Kesimpulan
+
+Setelah mengikuti langkah-langkah di atas, aplikasi Laravel 11 Anda harus sudah dikonfigurasi dan siap untuk dikembangkan lebih lanjut. Untuk informasi lebih lanjut tentang konfigurasi spesifik, rujuk ke [dokumentasi resmi Laravel](https://laravel.com/docs/11.x).

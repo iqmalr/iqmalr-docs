@@ -2,6 +2,7 @@
   "index": "Introduction",
   "another": "Another Page",
   "advanced": "Advanced (A Folder)",
+  "laravel-11": "Laravel 11",
   "about": {
     "title": "About",
     "type": "page"
@@ -9,7 +10,7 @@
   "contact": {
     "title": "Contact ↗",
     "type": "page",
-    "href": "https://twitter.com/shuding_",
+    "href": "https://www.linkedin.com/in/muhamad-iqmal-riffai-808ab5228/",
     "newWindow": true
   }
 }
