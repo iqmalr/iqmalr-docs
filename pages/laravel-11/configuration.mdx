@@ -10,6 +10,7 @@ Before you begin, make sure you have installed Laravel 11. If not, you can follo
 
 Laravel uses the `.env` file to manage environment configurations. Copy the `.env.example` file to `.env` and adjust the following values according to your environment:
 
+```plaintext filename=".env"
 APP_NAME=Laravel
 APP_ENV=local
 APP_KEY=
@@ -22,6 +23,7 @@ DB_PORT=3306
 DB_DATABASE=laravel
 DB_USERNAME=root
 DB_PASSWORD=
+```
 
 Don't forget to run `php artisan key:generate` to set the `APP_KEY`.
 
@@ -33,7 +35,7 @@ Laravel supports multiple database systems. You can configure your database conn
 
 After the database is configured, use migration to create your database schema:
 
-```bash
+```bash filename="terminal" copy
 php artisan migrate
 ```
 
@@ -41,7 +43,7 @@ php artisan migrate
 
 Laravel provides an integrated file system for storing files. To create a symbolic link from `public/storage` to `storage/app/public`, use the command:
 
-```bash
+```bash filename="terminal" copy
 php artisan storage:link
 ```
 
