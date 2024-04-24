@@ -1,16 +1,15 @@
-# Konfigurasi Laravel 11
+# Laravel 11 Configuration
 
-Laravel 11 memperkenalkan beberapa fitur baru dan peningkatan performa. Untuk memanfaatkannya secara maksimal, penting untuk mengkonfigurasi framework Anda dengan benar.
+Laravel 11 introduces several new features and performance enhancements. To leverage them to the fullest, it's important to configure your framework properly.
 
-## Persiapan
+## Preparation
 
-Sebelum Anda mulai, pastikan Anda telah menginstal Laravel 11. Jika belum, Anda dapat mengikuti panduan instalasi pada halaman sebelumnya atau dengan mengunjungi `laravel.com`
+Before you begin, make sure you have installed Laravel 11. If not, you can follow the installation guide on the previous page or by visiting `laravel.com`.
 
-## Konfigurasi Lokal
+## Local Configuration
 
-Laravel menggunakan file `.env` untuk mengelola konfigurasi lingkungan. Salin file `.env.example` menjadi `.env` dan sesuaikan nilai-nilai berikut sesuai dengan lingkungan Anda:
+Laravel uses the `.env` file to manage environment configurations. Copy the `.env.example` file to `.env` and adjust the following values according to your environment:
 
-```plaintext filename=".env"
 APP_NAME=Laravel
 APP_ENV=local
 APP_KEY=
@@ -23,30 +22,29 @@ DB_PORT=3306
 DB_DATABASE=laravel
 DB_USERNAME=root
 DB_PASSWORD=
-```
 
-Jangan lupa untuk menjalankan `php artisan key:generate` untuk mengatur `APP_KEY`.
+Don't forget to run `php artisan key:generate` to set the `APP_KEY`.
 
-## Konfigurasi Database
+## Database Configuration
 
-Laravel mendukung beberapa sistem database. Anda dapat mengkonfigurasi koneksi database Anda di file `.env` seperti yang ditunjukkan di atas.
+Laravel supports multiple database systems. You can configure your database connection in the `.env` file as shown above.
 
-## Migrasi Database
+## Database Migration
 
-Setelah database dikonfigurasi, gunakan migrasi untuk membuat skema database Anda:
+After the database is configured, use migration to create your database schema:
 
 ```bash
 php artisan migrate
 ```
 
-## Penyimpanan
+## Storage
 
-Laravel menyediakan sistem file yang terintegrasi untuk menyimpan file. Untuk membuat link simbolik dari `public/storage` ke `storage/app/public`, gunakan perintah:
+Laravel provides an integrated file system for storing files. To create a symbolic link from `public/storage` to `storage/app/public`, use the command:
 
 ```bash
 php artisan storage:link
 ```
 
-## Kesimpulan
+## Conclusion
 
-Setelah mengikuti langkah-langkah di atas, aplikasi Laravel 11 Anda harus sudah dikonfigurasi dan siap untuk dikembangkan lebih lanjut. Untuk informasi lebih lanjut tentang konfigurasi spesifik, rujuk ke [dokumentasi resmi Laravel](https://laravel.com/docs/11.x).
+After following the steps above, your Laravel 11 application should be configured and ready for further development. For more information on specific configurations, refer to the official Laravel documentation.
